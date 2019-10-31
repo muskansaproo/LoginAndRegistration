@@ -166,7 +166,7 @@ public class AbsenteesList extends AppCompatActivity {
                     if (err_timetable == 1) {
                         Toast.makeText(getApplicationContext(), timetable_result, Toast.LENGTH_SHORT).show();
                     } else {
-                        //timtetableresult=(EditText)findViewById(R.id.timetable_result);
+                         //timtetableresult=(EditText)findViewById(R.id.timetable_result);
                         //Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                         //timtetableresult.setText(jsonObject.);
                         //Intent i = new Intent(AbsenteesList.this, TimeTable.class);
