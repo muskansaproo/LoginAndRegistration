@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AbsenteesList"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacher_id"
+            android:text="Teacher ID:"
+            android:hint="Enter teacher ID"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacher_id_input"
+            android:textColor="@android:color/darker_gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacher_name"
+            android:text="Teacher Name:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:hint="Enter teacher name"
+            android:textColor="@color/colorPrimary"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/teacher_name_input"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Done"
+       android:background="@drawable/buttons"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_below="@+id/done_button"
+        android:text="The list of today's absent teachers are:"
+        android:layout_marginTop="10dp"
+        />
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:layout_below="@+id/text1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show"
+        android:id="@+id/timetable_result"/>
+    <Button
+        android:id="@+id/submitList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/show"
+        android:layout_alignParentRight="true"
+        android:text="Submit" />
+
+</RelativeLayout>
